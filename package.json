@@ -1,0 +1,27 @@
+{
+  "name": "@explorable-viz/fluid-article",
+  "version": "0.1",
+  "description": "Template article for Fluid article.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/explorable-viz/fluid.git"
+  },
+  "author": "Fluid Contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/explorable-viz/fluid/issues"
+  },
+  "scripts": {
+    "bundle": "yarn fluid bundle-website -w article -l",
+    "bundle-serve": "yarn bundle && yarn serve",
+    "serve": "npx http-serve dist/article",
+    "test": "yarn website-test article"
+  },
+  "packageManager": "yarn@1.22.22",
+  "dependencies": {
+    "@explorable-viz/fluid": "^0.7.90"
+  },
+  "devDependencies": {
+    "puppeteer": "23.2.0"
+  }
+}
